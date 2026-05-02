@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">Your Name</h3>
+            <h3 className="text-xl font-bold mb-2">Senjuro</h3>
             <p className="text-sm">Full Stack Developer</p>
           </div>
           

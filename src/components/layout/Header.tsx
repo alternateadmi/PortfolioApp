@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
             isDarkMode ? 'text-white' : 'text-neugray-800'
           }`}
         >
-          Your Name
+          Senjuro
         </div>
 
         {/* Desktop Navigation */}
