@@ -9,6 +9,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
   const [activeButton, setActiveButton] = React.useState<string | null>(null);
+  const baseUrl = import.meta.env.BASE_URL;
 
   const handleButtonPress = (name: string) => {
     setActiveButton(name);
@@ -59,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
                 View Projects <ArrowDown size={16} />
               </button>
               <a
-                href="/resume.pdf"
+                href={`${baseUrl}resume.html`}
                 className={`px-6 py-3 flex items-center gap-2 ${
                   getNeuButtonStyles(isDarkMode, activeButton === 'resume')
                 }`}
@@ -78,7 +79,7 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
           >
             <div className={`w-64 h-64 md:w-80 md:h-80 rounded-full ${getNeuCardStyles(isDarkMode)} overflow-hidden`}>
               <img
-                src="/468e9605be526ee16c58074751ec0890.jpg"
+                src={`${baseUrl}468e9605be526ee16c58074751ec0890.jpg`}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
