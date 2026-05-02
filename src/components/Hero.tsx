@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Hello, I'm <span className="text-primary-600">Your Name</span>
+              Hello, I'm <span className="text-primary-600">Senjuro</span>
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-3xl mb-6">
               Full Stack Developer
@@ -77,9 +77,9 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
             transition={{ duration: 0.6 }}
           >
             <div className={`w-64 h-64 md:w-80 md:h-80 rounded-full ${getNeuCardStyles(isDarkMode)} overflow-hidden`}>
-              <img 
-                src="dist\468e9605be526ee16c58074751ec0890.jpg" 
-                alt="Profile" 
+              <img
+                src="/468e9605be526ee16c58074751ec0890.jpg"
+                alt="Profile"
                 className="w-full h-full object-cover"
               />
             </div>
