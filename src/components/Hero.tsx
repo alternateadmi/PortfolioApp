@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
   const [activeButton, setActiveButton] = React.useState<string | null>(null);
-  const baseUrl = import.meta.env.BASE_URL;
+  const baseUrl = import.meta.env.BASE_URL || './';
 
   const handleButtonPress = (name: string) => {
     setActiveButton(name);
@@ -82,6 +82,10 @@ const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
                 src={`${baseUrl}468e9605be526ee16c58074751ec0890.jpg`}
                 alt="Profile"
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  // Fallback if image fails to load
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
               />
             </div>
           </motion.div>
